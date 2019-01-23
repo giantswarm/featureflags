@@ -9,9 +9,28 @@
   revision = "8ab6407b697782a06568d4b7f1db25550ec2e4c6"
   version = "v0.2.0"
 
+[[projects]]
+  branch = "master"
+  digest = "1:f7ae60209ba785a98a5b27ed43ec9778f74e6c7623b5ff3d86f900f66c86fac1"
+  name = "github.com/giantswarm/microerror"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "3bc3cb1a36700aa4bbfcf6c335bc2ab92ad66d8d"
+
+[[projects]]
+  branch = "master"
+  digest = "1:926b6084b81f49359f67e48ef8b74f33ea8509afe8410d3b34789eaea02da898"
+  name = "github.com/juju/errgo"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "08cceb5d0b5331634b9826762a8fd53b29b86ad8"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/coreos/go-semver/semver"]
+  input-imports = [
+    "github.com/coreos/go-semver/semver",
+    "github.com/giantswarm/microerror",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
